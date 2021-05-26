@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm a solo traveler and digital nomad. Read more about my story and how I got to where I am today."/>
+    <script src="https://kit.fontawesome.com/e8143a351d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://use.typekit.net/dbs4ycu.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>About | Nomadlife</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" alt="logo" src="images/logo.png"></a>
+        <!------- navigation ------->
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu">
+        <nav role="navigation" aria-label="main menu">
+        <ul class="navbar">
+            <li><a href="index.html">home</a></li>
+            <li><a href="blog.html">blog</li>
+            <li><a href="about.html" class="active">about</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+        </nav>
+    </header>
+        <main>
+            <div class="about-page">
+                <div class="about-container">
+                    <h1 class="centered">About</h1>
+                    <h2 class="centered about-h2 padding-y">WANDERING WRITER. TRAVEL + LIFESTYLE BLOGGER</h2>
+                    <p class="about-text-about-page"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+                        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+
+                    <img src="images/about.jpg" class="about-image" alt="blonde happy woman with a yellow t-shirt seen from the side with the sun shining on her">
+                </div>
+
+                <h2 class="centered about-h2 favorite-places-h2">some of my favorite places</h2>
+                <div class="favorite-places-container">
+
+                    <a class="box-1 box-1-places" href="category.html?id=73">
+                        <div class="img-wrapper">
+                            <img src="images/about-1.jpg" alt="green cacti in front of a red wall with a neon sign that says Mexico mi amor">
+                        </div>
+                        <div class="overlay-2">
+                            <h3 class="text-box-1">mexico</h3>
+                        </div>
+                    </a>
+
+                    <a class="box-1 box-1-places" href="category.html?id=24">
+                        <div class="img-wrapper">
+                            <img src="images/about-2.jpg" alt="golden temple by a lake surrounded by trees and pink and blue skies">
+                        </div>
+                        <div class="overlay-2">
+                            <h3 class="text-box-1">cambodia</h3>
+                        </div>
+                    </a>
+
+                    <a class="box-1 box-1-places" href="category.html?id=23">
+                        <div class="img-wrapper">
+                            <img src="images/about-3.jpg" alt="man in red hiking a staircase on a green lush hill">
+                        </div>
+                        <div class="overlay-2">
+                            <h3 class="text-box-1">hawaii</h3>
+                        </div>
+                    </a>
+
+                    <a class="box-1 box-1-places" href="category.html?id=13">
+                        <div class="img-wrapper">
+                            <img src="images/about-4.jpg" alt="close up of a pair of hands holding powdered color that's used in the Holi festival in India">
+                        </div>
+                        <div class="overlay-2">
+                            <h3 class="text-box-1">india</h3>
+                        </div>
+                    </a>
+
+                    <a class="box-1 box-1-places" href="category.html?id=58">
+                        <div class="img-wrapper">
+                            <img src="images/about-5.jpg" alt="street view from Cartagena, Colombia with colorful buildings">
+                        </div>
+                        <div class="overlay-2">
+                            <h3 class="text-box-1">colombia</h3>
+                        </div>
+                    </a>
+
+                    <a class="box-1 box-1-places" href="category.html?id=32">
+                        <div class="img-wrapper">
+                            <img src="images/about-6.jpg" alt="macchu pichu seen on a sunny day with clouds surrounding the mountains">
+                        </div>
+                        <div class="overlay-2">
+                            <h3 class="text-box-1">peru</h3>
+                        </div>
+                    </a>
+            </div>
+        </main>
+    </div>
+    <div class="sign-up-newsletter about-sign-up-section">
+        <h3 class="carousel-text centered sign-up-h3">Get travel travel tips, nomad resources and more straight to your inbox!</h3>
+        <h4 class="centered padding sign-up-h4">For exclusive travel tips, giveaways and more, be sure to subscribe to my newsletter. </h4>
+        <form id="newsletter" method="GET" action="">
+            <div id="message"></div>
+            <div class="input-container">
+                <input name="name" id="name" class="input" type="text" required/>
+                <label for="name" class="label">Name</label>
+                <div class="form-error" id="nameError">Please enter your name</div>
+            </div>
+            <div class="input-container">
+                <input name="email" id="email" class="input" type="email" required/>
+                <label for="email" class="label">E-mail</label>
+                <div class="form-error" id="emailError">Please enter a valid email address</div>
+            </div>
+            <button class="btn newsletter-btn">Sign me up!</button>
+        </form>
+    </div>
+    <div class="line margin-bottom"></div>
+    <footer>
+        <img class="logo" src="images/logo.png">
+        <p>&copy; All rights reserved</p>
+        <img class="icon insta margin-y" src="images/icon-insta.svg">
+    </footer>
+</body>
+</html>

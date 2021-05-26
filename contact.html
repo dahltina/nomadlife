@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with me. I can answer your questions about solo travel and the digital nomad lifestyle"/>
+    <script src="https://kit.fontawesome.com/e8143a351d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://use.typekit.net/dbs4ycu.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Contact | Nomadlife</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" alt="logo" src="images/logo.png"></a>
+        <!------- navigation ------->
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu">
+        <nav role="navigation" aria-label="main menu">
+        <ul class="navbar">
+            <li><a href="index.html">home</a></li>
+            <li><a href="blog.html" >blog</li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="contact.html" class="active">contact</a></li>
+        </ul>
+        </nav>
+    </header>
+    <div class="body">
+
+        <main>
+            <div class="form-container">
+                <h1>Get in Touch</h1>
+                <h3>Please don't hesitate to get in touch, I will get back to you as soon as I can</h3>
+                <div id="success-message"></div>
+                    <form class="contact-form" action="success.php" method="GET" id="form">
+
+                        <div class="name">
+                            <label for="name">Name* </label>
+                            <input type="text" name="name" id="name" >
+                            <div id="nameError" class="formError">Your name should be least five characters</div>
+                        </div>
+
+                        <div class="email">
+                            <label for="email">E-mail*</label>
+                            <input type="email" name="email" id="email">
+                            <div id="emailError" class="formError">Please provide a valid e-mail</div>
+                        </div>
+
+                        <div class="subject">
+                            <label for="subject">Subject*</label>
+                            <input type="text" name="subject" id="subject">
+                            <div id="subjectError" class="formError">Please provide a subject of minimum 15 characters</div>
+                        </div>
+
+                        <div class="textarea">
+                            <label for="textarea">Message*</label>
+                            <textarea name="message" id="message" rows="10"></textarea>
+                            <div id="messageError" class="formError">Message must be at least 20 characters</div>
+                        </div>
+
+                        <input id="submit" type="submit" value="Send" class="btn"/>
+                    </form>
+            </div>
+        </main>
+
+    </div>
+    <div class="sign-up-newsletter">
+        <h3 class="carousel-text centered sign-up-h3">Get travel travel tips, nomad resources and more straight to your inbox!</h3>
+        <h4 class="centered padding sign-up-h4">For exclusive travel tips, giveaways and more, be sure to subscribe to my newsletter. </h4>
+        <form id="newsletter" method="GET" action="">
+            <div id="s-message"></div>
+            <div class="input-container">
+                <input name="s-name" id="s-name" class="input" type="text"/>
+                <label for="s-name" class="label">Name</label>
+                <div class="form-error" id="s-nameError">Please enter your name</div>
+            </div>
+            <div class="input-container">
+                <input name="s-email" id="s-email" class="input" type="email"/>
+                <label for="s-email" class="label">E-mail</label>
+                <div class="form-error" id="s-emailError">Please enter a valid email address</div>
+            </div>
+            <button class="btn newsletter-btn">Sign me up!</button>
+        </form>
+    </div>
+    <div class="line margin-bottom"></div>
+    <footer>
+        <img class="logo" src="images/logo.png">
+        <p>&copy; All rights reserved</p>
+        <img class="icon insta margin-y" src="images/icon-insta.svg">
+    </footer>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
