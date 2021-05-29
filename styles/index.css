@@ -146,7 +146,7 @@ img {
 
 header {
     display: grid;
-    grid-template-columns: 1fr 20px;
+    grid-template-columns: 1fr 25px 20px;
     height: 50px;
     margin: 10px;
 }
@@ -155,17 +155,18 @@ header {
     width: 110px;
 }
 
-/* navigation */
+/* navigation and searchbar */
 
-nav {
+nav, #hamburger-menu, #search-icon, .search-wrapper {
     display: none;
 }
 
-#hamburger-menu:checked ~ nav {
+#hamburger-menu:checked ~ nav,
+#search-icon:checked ~ .search-wrapper {
     display: block;
 }
 
-ul {
+ul, .search-wrapper {
     z-index: 10;
     position: absolute;
     top: 50px;
@@ -194,17 +195,39 @@ ul a {
     text-transform: uppercase;
 }
 
-#hamburger-menu {
-    display: none;
-}
-
 .active {
     color: var(--black);
 }
 
-.fa-bars {
+.fa-bars, .fa-search {
     cursor: pointer;
 }
+
+/* searchbar */
+
+#search {
+    position: relative;
+    top: 100px;
+    width: 70%;
+    height: 35px;
+}
+
+#search-btn {
+    position: relative;
+    top: 101px;
+    left: 0px;
+    height: 35px;
+    padding: 10px;
+    background-color: var(--cta);
+    border: none;
+    color: var(--black);
+    cursor: pointer;
+}
+
+#search, #search-btn {
+    border: 1px solid black;
+}
+
 
 /* main section index */
 
@@ -669,7 +692,15 @@ input[type="email"] {
 
 /*////////// laptops //////////*/
 @media (min-width: 901px) {
-    /* navigation */
+    /* navigation & search bar */
+    /* <input type="checkbox" id="search-icon">
+        <div class="search-wrapper">
+            <input type="text" name="search" id="search" placeholder="search">
+            <input type="submit" name="search-btn" id="search-btn" value="Go!">
+        </div> */
+    #search {
+        max-width: 600px;
+    }
 
     ul {
         font-size: 1.5rem;

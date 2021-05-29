@@ -66,6 +66,7 @@ function validateEmail(email) {
     return patternMatches;
 }
 
+
 // sign up newsletter form
 
 // const newsletterForm = document.querySelector("#newsletter");

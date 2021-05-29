@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A blog about solo travel, the digital nomad lifestyle and everything that comes along. Here you'll find tons of resources on how to do the same, and guides to many destinations all over the world"/>
-    <!-- <link rel="icon" hreF="images/site-icon.png"> -->
     <script src="https://kit.fontawesome.com/e8143a351d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="https://use.typekit.net/dbs4ycu.css">
@@ -16,7 +15,13 @@
 <body>
     <header>
         <a href="index.html"><img class="logo" alt="logo" src="images/logo.png"></a>
-        <!------- navigation ------->
+        <!------- search and navigation ------->
+        <label for="search-icon"><i class="fas fa-search"></i></label>
+        <input type="checkbox" id="search-icon">
+        <div class="search-wrapper">
+            <input type="text" name="search" id="search" placeholder="search">
+            <input type="submit" name="search-btn" id="search-btn" value="Go!">
+        </div>
         <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
         <input type="checkbox" id="hamburger-menu">
         <nav role="navigation" aria-label="main menu">
