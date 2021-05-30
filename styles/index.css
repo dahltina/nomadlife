@@ -236,6 +236,7 @@ ul a {
     border: none;
     color: var(--black);
     cursor: pointer;
+    -webkit-appearance: none;
 }
 
 #search, #search-btn {
@@ -528,6 +529,7 @@ footer {
 .contact-form input[type="submit"] {
     border: none;
     margin: 0px 0px 100px 0px;
+    -webkit-appearance: none;
 }
 
 input:focus,
