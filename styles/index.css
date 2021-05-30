@@ -199,22 +199,36 @@ ul a {
     color: var(--black);
 }
 
-.fa-bars, .fa-search {
+.fa-bars, .fa-search, .fa-times {
     cursor: pointer;
 }
 
 /* searchbar */
 
+.search-wrapper {
+    z-index: 100;
+    position: fixed;
+    top: 0px;
+    overflow-y: scroll;
+}
+
+.fa-times {
+    position: fixed;
+    margin-left: 85%;
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+
 #search {
     position: relative;
-    top: 100px;
+    top: 80px;
     width: 70%;
     height: 35px;
 }
 
 #search-btn {
     position: relative;
-    top: 101px;
+    top: 82px;
     left: 0px;
     height: 35px;
     padding: 10px;
@@ -226,6 +240,16 @@ ul a {
 
 #search, #search-btn {
     border: 1px solid black;
+}
+
+.search-results {
+    margin-top: 120px;
+}
+
+.search-box {
+    padding: 0px 35px;
+    max-width: 600px;
+    margin: auto;
 }
 
 
@@ -659,7 +683,11 @@ input[type="email"] {
 
     .blog-page-line {
         display: none;
-     }
+    }
+
+    .search-line {
+        display: inherit;
+    }
 
     /* about page */
     .favorite-places-container {
@@ -693,11 +721,6 @@ input[type="email"] {
 /*////////// laptops //////////*/
 @media (min-width: 901px) {
     /* navigation & search bar */
-    /* <input type="checkbox" id="search-icon">
-        <div class="search-wrapper">
-            <input type="text" name="search" id="search" placeholder="search">
-            <input type="submit" name="search-btn" id="search-btn" value="Go!">
-        </div> */
     #search {
         max-width: 600px;
     }

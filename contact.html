@@ -15,13 +15,21 @@
 <body>
     <header>
         <a href="index.html"><img class="logo" alt="logo" src="images/logo.png"></a>
-        <!------- navigation ------->
+        <!------- search and navigation ------->
+        <label for="search-icon"><i class="fas fa-search"></i></label>
+        <input type="checkbox" id="search-icon">
+        <div class="search-wrapper">
+            <i class="fas fa-times"></i>
+            <input type="text" name="search" id="search" placeholder="search">
+            <input type="submit" name="search-btn" id="search-btn" value="Go!">
+            <div class="search-results"></div>
+        </div>
         <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
         <input type="checkbox" id="hamburger-menu">
         <nav role="navigation" aria-label="main menu">
         <ul class="navbar">
             <li><a href="index.html">home</a></li>
-            <li><a href="blog.html" >blog</li>
+            <li><a href="blog.html">blog</li>
             <li><a href="about.html">about</a></li>
             <li><a href="contact.html" class="active">contact</a></li>
         </ul>
@@ -91,5 +99,6 @@
         <img class="icon insta margin-y" src="images/icon-insta.svg">
     </footer>
     <script src="scripts/form.js"></script>
+    <script src="scripts/search.js"></script>
 </body>
 </html>
