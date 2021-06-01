@@ -604,6 +604,22 @@ input[type="email"] {
         font-size: 1.2rem;
     }
 
+    .search-results {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 5%;
+        margin-right: 5%;
+        grid-gap: 20px;
+    }
+
+    .search-box {
+        padding: 0px;
+    }
+
+    .search-line {
+        display: none;
+    }
+
     /* typography */
     h1 {
         font-size: 50px;
@@ -687,10 +703,6 @@ input[type="email"] {
         display: none;
     }
 
-    .search-line {
-        display: inherit;
-    }
-
     /* about page */
     .favorite-places-container {
         display: grid;
@@ -723,12 +735,25 @@ input[type="email"] {
 /*////////// laptops //////////*/
 @media (min-width: 901px) {
     /* navigation & search bar */
+
     #search {
         max-width: 600px;
     }
 
     ul {
         font-size: 1.5rem;
+    }
+
+    .search-results {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 10%;
+        margin-right: 10%;
+        grid-gap: 30px;
+    }
+
+    .search-box {
+        padding: 0px;
     }
 
     /* typography */
@@ -948,6 +973,24 @@ input[type="email"] {
 
 /*////////// desktop //////////*/
 @media (min-width: 1400px) {
+
+    /* navigation */
+    .search-results {
+        display: grid;
+        max-width: 1000px;
+        margin: auto;
+        margin-top: 150px;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+
+    .search-box {
+        padding: 0px;
+    }
+
+    .search-line {
+        display: none;
+    }
     h2 {
         font-size: 28px;
     }

@@ -43,6 +43,9 @@ const displayResults = (posts) => {
             return (
             `<a href="post.html?id=${posts.id}">
                 <div class="search-box">
+                    <div class="img-wrapper">
+                        <img src="${posts._embedded['wp:featuredmedia']['0'].source_url}" class="box-image box-image-one" alt="${posts._embedded['wp:featuredmedia']['0'].alt_text}">
+                    </div>
                     <div class="box-text box-text-one">
                         <h3 class="carousel-text post-h3">${posts.title.rendered}</h3>
                         <p class="date">${newDate}</p>
