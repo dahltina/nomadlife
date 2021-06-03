@@ -58,9 +58,8 @@ h1,
     text-transform: none;
 }
 
-.carousel-text {
-    font-size: 1.3rem;
-    padding-top: 10px;
+a.carousel:nth-child(1) > section:nth-child(1) > div:nth-child(2) > p:nth-child(3) {
+    font-size: 14px;
 }
 
 .centered {
@@ -146,12 +145,16 @@ img {
 
 header {
     display: grid;
-    grid-template-columns: 1fr 25px 20px;
+    grid-template-columns: 1fr 30px 25px;
     height: 50px;
     margin: 10px;
 }
 
 .logo {
+    width: 110px;
+}
+
+.link-home {
     width: 110px;
 }
 
@@ -201,6 +204,7 @@ ul a {
 
 .fa-bars, .fa-search, .fa-times {
     cursor: pointer;
+    font-size: 20px;
 }
 
 /* searchbar */
@@ -629,6 +633,10 @@ input[type="email"] {
         line-height: 32px;
     }
 
+    a.carousel:nth-child(1) > section:nth-child(1) > div:nth-child(2) > p:nth-child(3) {
+        font-size: 1rem;
+    }
+
     /* grid layout index */
 
     .main {
@@ -767,10 +775,15 @@ input[type="email"] {
 
     .carousel-text {
         font-size: 1.5rem;
+        padding-top: 10px;
     }
 
     .post-h3 {
         font-size: 1.3rem;
+    }
+
+    a.carousel:nth-child(1) > section:nth-child(1) > div:nth-child(2) > p:nth-child(3) {
+        font-size: 1rem;
     }
 
     /* buttons, images */
