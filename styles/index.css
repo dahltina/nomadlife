@@ -7,8 +7,12 @@
 }
 
 @font-face {
-    font-family: "Gastromond", "Montserrat";
+    font-family: "Gastromond";
     src: url("https://use.typekit.net/dbs4ycu.css");
+}
+
+@font-face {
+    font-family: "Montserrat";
     src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 }
 
