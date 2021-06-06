@@ -32,12 +32,6 @@ loadPosts();
 
 const displayResults = (posts) => {
 
-    const newDate = new Date(posts.date).toLocaleString("en-GB", {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-    });
-
     const htmlString = posts
         .map((posts) => {
             return (
@@ -48,7 +42,6 @@ const displayResults = (posts) => {
                     </div>
                     <div class="box-text box-text-one">
                         <h3 class="carousel-text post-h3">${posts.title.rendered}</h3>
-                        <p class="date">${newDate}</p>
                         <p class="excerpt">${posts.excerpt.rendered}</p>
                         <div class="thin line blog-page-line search-line"></div>
                     </div>
