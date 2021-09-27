@@ -28,18 +28,27 @@ function displayCarousel(post) {
             break;
         }
 
+        const truncatedExcerpt = truncate(post[i].excerpt.rendered, 80);
+
         carouselContainer.innerHTML += `<a href="post.html?id=${post[i].id}" class="carousel">
                                             <section>
                                                 <img class="carousel-image" src="${post[i]._embedded['wp:featuredmedia']['0'].source_url}" alt="${post[i]._embedded['wp:featuredmedia']['0'].alt_text}">
                                                 <div class="overlay">
                                                     <h3 class="carousel-text">${post[i].title.rendered}</h3>
-                                                    <p class="carousel-text">${post[i].excerpt.rendered}</p>
+                                                    <p class="carousel-text">${truncatedExcerpt} <span class="blue-text"><nobr>read more</nobr></span></p>
                                                 </div>
                                             </section>
                                         </a>
                                     </div>`
     }
 }
+
+function truncate(string, len){
+    return (string.length > len) ? string.substr(0, len-1) + '&hellip;' : string;
+};
+
+//  https://stackoverflow.com/questions/1199352/smart-way-to-truncate-long-stringsif
+
 
 const nextBtn = document.querySelector(".arrow-right");
 const previousBtn = document.querySelector(".arrow-left");

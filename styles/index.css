@@ -98,6 +98,10 @@ a {
     margin: 0px;
 }
 
+.blue-text {
+    color: var(--blue);
+}
+
 /* images and buttons */
 
 img {
